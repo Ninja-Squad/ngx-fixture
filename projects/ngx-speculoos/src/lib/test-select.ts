@@ -66,7 +66,8 @@ export class TestSelect extends TestHtmlElement<HTMLSelectElement> {
     if (this.selectedIndex < 0) {
       return null;
     }
-    return this.nativeElement.options[this.selectedIndex].label;
+    // Workaround for a JEST behavior which doesn't respect the DOM specification on <select>
+    return this.nativeElement.options[this.selectedIndex].label || this.nativeElement.options[this.selectedIndex].text;
   }
 
   /**

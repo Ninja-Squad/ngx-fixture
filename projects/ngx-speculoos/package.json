@@ -7,6 +7,9 @@
     "@angular/router": "^6.0.0",
     "rxjs": "^6.0.0"
   },
+  "optionalDependencies": {
+    "@types/jest": "^23.3.0"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",

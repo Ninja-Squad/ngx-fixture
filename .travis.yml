@@ -8,9 +8,11 @@ script:
   - yarn lint
   - yarn build
   - yarn test
+  - yarn jasmine:build
+  - yarn jasmine:test
   - yarn doc
-  - yarn demobuild
-  - yarn demotest
+  - yarn demo:build
+  - yarn demo:test
 after_success:
 # upload js coverage to codecov.io
 - npm run codecov

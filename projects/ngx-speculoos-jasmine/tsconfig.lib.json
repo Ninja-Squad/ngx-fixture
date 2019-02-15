@@ -12,9 +12,12 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "strict": true,
+    "types": [
+      "@types/jasmine"
+    ],
     "lib": [
       "dom",
-      "es2018"
+      "es2015"
     ]
   },
   "angularCompilerOptions": {
